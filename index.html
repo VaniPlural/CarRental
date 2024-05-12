@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Car Rental</title>
+    <h3>ACME Car Rental</h3>
+    
+</head>
+<body>
+   
+
+<p>Pick UP Date: <input type="text" id="dateField"   /></br></p>
+<p>No. of Days:  <input type="text" id="daysField"  /></br></p>
+
+</br>
+<fieldset>
+<label>Options:</label><br>
+  <input type="checkbox" id="gps" name="options" value="5" checked> GPS ($3.5/day)<br>
+  <input type="checkbox" id="childSeat" name="options" value="10"> Child Seat ($2.95/day)<br>
+  <input type="checkbox" id="childSeat" name="options" value="10"> Roadside ASSistance ($2.95/day)<br><br>
+  </fieldset>
+<fieldset>
+  <!--<legend>Under 25<legend>-->
+<fieldset>
+    <label>Driver Age(Under 25):</label><br>
+    <input type="radio" id="ageUnder25" name="driverAge" value="yes" checked> Under 25<br>
+    <input type="radio" id="ageOver25" name="driverAge" value="no"> 25 and Over<br><br>
+    
+</fieldset>
+<p><input type="button" id="estimateBtn" value="Estimate Total Cost"/>
+  
+    
+      <h4>Car Rental:<div id="totalCost">$0.00</div></h4>
+      <h4>Options<div id="options">$0.00</div></h4>
+      <h4>Under 25 Surcharge:<div id="under25Surcharge">$0.00</div></h4><br>
+      <h4>Total Due:<div id="totalDue">$0.00</div></h4>
+
+
+    
+    <script src="scripts/index.js"></script> 
+</body>
+</html>
